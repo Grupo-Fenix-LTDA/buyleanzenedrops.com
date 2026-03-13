@@ -20,99 +20,13 @@
   
   </head>
   <body class="body">
-    <section class="section-nav">
-      <div class="w-layout-blockcontainer container w-container">
-        <div class="div-nav">
-          <img src="images/Secure.svg" loading="lazy" alt="" class="nav-images">
-          <img src="images/McAfee.png" loading="lazy" alt="" class="nav-images">
-          <img src="images/Norton.png" loading="lazy" alt="" class="nav-images">
-        </div>
-      </div>
-    </section>
     <section class="section-main">
       <div class="w-layout-blockcontainer container variant w-container">
         <div class="div-main">
-          <div class="steps">
-            <div class="step">
-              <div class="step-text">Shipping</div>
-              <div class="step-number">
-                <h6 class="step-number-text">1</h6>
-              </div>
-            </div>
-            <div class="divisor-1"></div>
-            <div class="step">
-              <div class="step-text">Options</div>
-              <div class="step-number">
-                <h6 class="step-number-text">2</h6>
-              </div>
-            </div>
-            <div class="divisor-2"></div>
-            <div class="step">
-              <div class="step-text">Summary</div>
-              <div class="step-number variant">
-                <h6 class="step-number-text variant">3</h6>
-              </div>
-            </div>
-          </div>
-          <div class="vsl-holder">
-            <h1 style="text-align: center; font-size: 46px;">Don't Close This Page Or <br>You Might  Be Double Billed!</h1>
-
-            <!-- Vturb -->
-
-            <div class="vsl w-embed w-script">
-              <style>
-                .esconde {
-                  display: none;
-                }
-              </style>
-              <script type="text/javascript">
-                document.addEventListener("DOMContentLoaded", function() {
-                  /* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
-                  var SECONDS_TO_DISPLAY = 540;
-                  var CLASS_TO_DISPLAY = ".esconder";
-                  /* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
-                  var attempts = 0;
-                  var elsHiddenList = [];
-                  var elsDisplayed = false;
-                  var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
-                  var alreadyDisplayedKey = `alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
-                  var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
-                  setTimeout(function() {
-                    elsHiddenList = Array.prototype.slice.call(elsHidden);
-                  }, 0);
-                  var showHiddenElements = function() {
-                    elsDisplayed = true;
-                    elsHiddenList.forEach((e) => e.style.display = "block");
-                    localStorage.setItem(alreadyDisplayedKey, true)
-                  }
-                  var startWatchVideoProgress = function() {
-                    if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
-                      if (attempts >= 10) return;
-                      attempts += 1;
-                      return setTimeout(function() {
-                        startWatchVideoProgress()
-                      }, 1000);
-                    }
-                    smartplayer.instances[0].on('timeupdate', () => {
-                      if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
-                      if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
-                      showHiddenElements();
-                    })
-                  }
-                  if (alreadyElsDisplayed === 'true') {
-                    setTimeout(function() {
-                      showHiddenElements();
-                    }, 100);
-                  } else {
-                    startWatchVideoProgress()
-                  }
-                });
-              </script>
-            </div>
-          </div>
-          <div class="potes-internos esconder">
-            <h1 class="potes-internos-tittle"> <b>You Got 14% OFF! Now Upgrade Your Order and Save Way More:</b> </h1>
+          <h1 style="text-align: center; margin-bottom: 10px;">Leanzene</h1>
+          <div class="potes-internos">
             <br>
+            <h2 style="text-align: center; margin-bottom: 15px;">SELECT YOUR DISCOUNT PACKAGE</h2>
             <div class="potes-holder-grid">
               <div class="potes-holder-div variant2 w-inline-block">
                 <div class="potes-tittle-div">
@@ -282,12 +196,16 @@
           <div class="footer-links-holder">
             <a href="/terms" class="footer-link">TERMS</a>
             <a href="/privacy" class="footer-link">PRIVACY</a>
-            <a href="/support" class="footer-link">CONTACT</a>
-            <a href="/support" class="footer-link">SHIPPING</a>
           </div>
-          <p class="footer-text">All statements and results presented on this website are for informational purposes only. They are not specific medical advice for any individual. Neither the website, nor product should substitute medical advice given by a certified health professional. If you have a health problem, or you have sensible allergies, are pregnant or diagnosed with chronic conditions, it is strongly recommended that you consult your doctor immediately and before taking any pills or supplements. Individual results may vary depending on the case. Copyright © 2025. All Rights Reserved. <br>
-            <br>Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.
-          </p>
+          <div style="text-align: center; font-size: 13px; color: #888; margin: 15px auto 5px;">
+            <p>For Product Support, please contact the vendor <a href="/support" style="color: #555; text-decoration: underline;">HERE</a>.<br>
+            For Order Support, please contact ClickBank <a href="https://clickbank.com/support/" target="_blank" style="color: #555; text-decoration: underline;">HERE</a>.</p>
+          </div>
+          <div style="max-width: 700px; margin: 0 auto; padding: 20px 0; text-align: center; font-size: 11px; color: #888; line-height: 1.7; border-top: 1px solid rgba(0,0,0,0.08);">
+            <p style="margin-bottom: 8px;">ClickBank is the retailer of this product. CLICKBANK&reg; is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of this product or any claim, statement or opinion used in promotion of this product.</p>
+            <p style="margin-bottom: 8px;">Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.</p>
+            <p>Testimonials, case studies, and examples found on this page are results that have been forwarded to us by users of Leanzene and related products are not intended to represent or guarantee that anyone will achieve the same or similar results.</p>
+          </div>
         </div>
       </div>
     </section>
